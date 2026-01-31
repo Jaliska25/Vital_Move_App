@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:fitsSystemWindows="true"
+    >
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTextDuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/tealVital"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="8dp"
+        android:text="@string/title_save_activity"
+        android:textAlignment="center"
+        android:textColor="@color/background_app"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <!-- PERSON ICON AND ACTIVITY INPUT -->
+    <ImageView
+        android:id="@+id/iconActivityName"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTextActivityName"
+        app:layout_constraintEnd_toStartOf="@+id/etTextActivityName"
+        app:layout_constraintTop_toTopOf="@+id/etTextActivityName"
+        app:srcCompat="@drawable/outline_accessibility_new_24"
+        app:tint="@color/tealVital" />
+
+    <EditText
+        android:id="@+id/etTextActivityName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hint_activity_name"
+        android:inputType="textCapSentences"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <!-- DURATION ICON AND INPUT -->
+    <ImageView
+        android:id="@+id/iconDuration"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTextDuration"
+        app:layout_constraintEnd_toStartOf="@+id/etTextDuration"
+        app:layout_constraintTop_toTopOf="@+id/etTextDuration"
+        app:srcCompat="@drawable/outline_av_timer_24"
+        app:tint="@color/tealVital" />
+
+    <EditText
+        android:id="@+id/etTextDuration"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
+        android:hint="@string/hint_duration"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+
+    <!-- TYPE ICON AND INPUT -->
+    <ImageView
+        android:id="@+id/iconType"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTextType"
+        app:layout_constraintEnd_toStartOf="@+id/etTextType"
+        app:layout_constraintTop_toTopOf="@+id/etTextType"
+        app:srcCompat="@drawable/outline_ad_group_24"
+        app:tint="@color/tealVital" />
+
+    <EditText
+        android:id="@+id/etTextType"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_type"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextDuration" />
+
+
+    <!-- SAVE BUTTON -->
+    <Button
+        android:id="@+id/btnSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/tealVital"
+        android:text="@string/btn_save_action"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextType" />
+
+    <!-- EXIT BUTTON -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/fucsiaMove"
+        android:text="@string/btn_exit_action"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/btnSaveButton" />
+
+    <!-- LIST OF ACTIVITIES SAVED -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/List"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MAIN COLORS -->
+    <color name="tealVital">#009688</color>
+    <color name="fucsiaMove">#FF4081</color>
+    <color name="background_app">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+
+    <!-- REAL TIME ACTIVITY COLORS -->
+    <color name="waiting">#BDBDBD</color>
+    <color name="walking">#AAD9AC</color>
+    <color name="flying">#E991AE</color>
+
+
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vital Move</string>
+
+    <!-- Main Screen -->
+    <string name="slogan_app">Smart Motion Tracker</string>
+
+    <string name="btn_main_save">Save\nActivity</string>
+    <string name="btn_main_realtime">Real Time\nActivity</string>
+
+
+    <!-- Save Activity Screen -->
+    <string name="title_save_activity">Save Activity</string>
+
+    <string name="hint_activity_name">Write the activity</string>
+    <string name="hint_duration">Duration (Minutes)</string>
+    <string name="hint_type">Type of Activity</string>
+
+    <string name="btn_save_action">Save</string>
+    <string name="btn_exit_action">Exit</string>
+
+
+
+    <!-- Real Time Activity Screen -->
+    <string name="title_realtime">Real Time Activity</string>
+    <string name="movement">Waiting Movement..</string>
+    <string name="btn_finish">Finish Session</string>
+
+
+</resources>
